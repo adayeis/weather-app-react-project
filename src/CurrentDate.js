@@ -1,4 +1,4 @@
-export default function CurrentDate(props) {
+export default function CurrentDate() {
   let now = new Date();
   let months = [
     "January",

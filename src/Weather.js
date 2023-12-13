@@ -5,6 +5,8 @@ export default function Weather() {
     <div className="Weather">
       <div>
         <form>Search area</form>
+      </div>
+      <div>
         <h2>City name 📍</h2>
       </div>
       <div>Current content</div>

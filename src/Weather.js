@@ -16,7 +16,6 @@ export default function Weather(props) {
       max: Math.round(response.data.main.temp_max),
       description: response.data.weather[0].description,
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -33,7 +32,7 @@ export default function Weather(props) {
           <h2>{weather.city} 📍</h2>
         </div>
         <div>
-          <CurrentDate date={weather.date} />
+          <CurrentDate />
           <div className="temp-container">
             <ul>
               <li className="current-temp">

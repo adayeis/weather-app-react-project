@@ -1,4 +1,5 @@
 export default function CurrentDate(props) {
+  let now = new Date();
   let months = [
     "January",
     "February",
@@ -22,11 +23,12 @@ export default function CurrentDate(props) {
     "Saturday",
     "Sunday",
   ];
-  let dayName = days[props.date.getDay()];
-  let month = months[props.date.getMonth()];
-  let dayNumber = props.date.getDate();
-  let hour = props.date.getHours();
-  let min = props.date.getMinutes();
+  let year = now.getFullYear();
+  let dayName = days[now.getDay()];
+  let month = months[now.getMonth()];
+  let dayNumber = now.getDate();
+  let hour = now.getHours();
+  let min = now.getMinutes();
   if (min < 10) {
     min = `0${min}`;
   }
@@ -37,7 +39,7 @@ export default function CurrentDate(props) {
     <header>
       <ul>
         <li>
-          {dayNumber} {month}, {dayName}
+          {dayName}, {dayNumber} {month} {year}
         </li>
         <li>
           {hour}:{min}

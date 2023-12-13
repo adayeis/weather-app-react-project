@@ -3,5 +3,66 @@
   border: 1px solid var(--morning-div-stroke);
   margin: 5px 0;
   border-radius: 5px;
-  padding: 10px;
+  padding: 12px 20px;
+}
+
+.Weather form {
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  gap: 8px;
+}
+
+.Weather input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--morning);
+}
+
+.Weather input[type="submit"] {
+  background-color: var(--morning-div);
+  box-shadow: 1px 1px 2px var(--morning);
+}
+
+.Weather input[type="submit"]:hover {
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.Weather h2 {
+  text-align: center;
+}
+
+.Weather ul {
+  list-style-type: none;
+}
+
+.Weather header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Weather .temp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Weather .temp-container li {
+  padding-bottom: 5px;
+}
+
+.Weather .current-temp {
+  font-size: 80px;
+}
+
+.Weather .current-temp span {
+  font-size: 30px;
+  position: relative;
+  top: -30px;
+  padding: 0 3px;
+}
+
+.Weather img {
+  width: 50%;
 }

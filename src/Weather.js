@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { Hearts } from "react-loader-spinner";
+import CurrentDate from "./CurrentDate";
 
 import "./Weather.css";
 
@@ -15,6 +16,7 @@ export default function Weather(props) {
       max: Math.round(response.data.main.temp_max),
       description: response.data.weather[0].description,
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      date: new Date(response.data.dt * 1000),
     });
   }
 
@@ -31,12 +33,7 @@ export default function Weather(props) {
           <h2>{weather.city} 📍</h2>
         </div>
         <div>
-          <header>
-            <ul>
-              <li>21 September, Thursday</li>
-              <li>9:41 am</li>
-            </ul>
-          </header>
+          <CurrentDate date={weather.date} />
           <div className="temp-container">
             <ul>
               <li className="current-temp">

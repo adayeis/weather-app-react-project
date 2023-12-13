@@ -1,0 +1,15 @@
+:root {
+  --morning: #d3e9f5;
+  --morning-div: #f6fbff;
+  --morning-div-stroke: #f7f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--morning);
+}

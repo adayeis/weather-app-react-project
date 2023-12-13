@@ -49,7 +49,7 @@
 }
 
 .Weather .temp-container li {
-  padding-bottom: 5px;
+  padding: 5px 0;
 }
 
 .Weather .current-temp {
@@ -65,4 +65,8 @@
 
 .Weather img {
   width: 50%;
+}
+
+.Weather .description {
+  text-transform: capitalize;
 }

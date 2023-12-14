@@ -1,0 +1,51 @@
+.DisplayWeather div {
+  background-color: var(--morning-div);
+  border: 1px solid var(--morning-div-stroke);
+  margin: 5px 0;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.DisplayWeather h2 {
+  text-align: center;
+}
+
+.DisplayWeather ul {
+  list-style-type: none;
+}
+
+.DisplayWeather header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DisplayWeather .temp-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.DisplayWeather .temp-container li {
+  padding: 5px 0;
+}
+
+.DisplayWeather .current-temp {
+  font-size: 80px;
+}
+
+.DisplayWeather .current-temp span {
+  font-size: 30px;
+  position: relative;
+  top: -33px;
+  padding: 0 3px;
+}
+
+.DisplayWeather img {
+  width: 50%;
+}
+
+.DisplayWeather .description {
+  text-transform: capitalize;
+}

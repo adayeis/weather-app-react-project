@@ -22,51 +22,10 @@
 .Weather input[type="submit"] {
   background-color: var(--morning-div);
   box-shadow: 1px 1px 2px var(--morning);
+  color: black;
 }
 
 .Weather input[type="submit"]:hover {
   cursor: pointer;
   box-shadow: none;
-}
-
-.Weather h2 {
-  text-align: center;
-}
-
-.Weather ul {
-  list-style-type: none;
-}
-
-.Weather header ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.Weather .temp-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.Weather .temp-container li {
-  padding: 5px 0;
-}
-
-.Weather .current-temp {
-  font-size: 80px;
-}
-
-.Weather .current-temp span {
-  font-size: 30px;
-  position: relative;
-  top: -33px;
-  padding: 0 3px;
-}
-
-.Weather img {
-  width: 50%;
-}
-
-.Weather .description {
-  text-transform: capitalize;
 }

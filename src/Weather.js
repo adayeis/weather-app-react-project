@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { Hearts } from "react-loader-spinner";
 import DisplayWeather from "./DisplayWeather";
+import DisplayForecast from "./DisplayForecast";
+
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -36,7 +38,6 @@ export default function Weather(props) {
   }
 
   /* Formu componente çevirmeye çalış */
-
   if (weather.ready) {
     return (
       <div className="Weather">
@@ -51,6 +52,7 @@ export default function Weather(props) {
           </form>
         </div>
         <DisplayWeather info={weather} />
+        <DisplayForecast />
       </div>
     );
   } else {

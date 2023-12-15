@@ -1,0 +1,14 @@
+.DisplayForecast ul {
+  list-style-type: none;
+}
+
+.DisplayForecast li {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr 1fr;
+  margin: 2px;
+}
+
+.DisplayForecast li span {
+  align-self: center;
+}

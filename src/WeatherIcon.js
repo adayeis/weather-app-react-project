@@ -1,6 +1,6 @@
 import {
   WiDaySunny,
-  WiMoonAltFull,
+  WiMoonAltNew,
   WiDayCloudy,
   WiNightCloudy,
   WiCloud,
@@ -19,7 +19,7 @@ export default function WeatherIcon(props) {
     case "01d":
       return <WiDaySunny size={180} color="#000" />;
     case "01n":
-      return <WiMoonAltFull size={180} color="#000" />;
+      return <WiMoonAltNew size={180} color="#000" />;
     case "02d":
       return <WiDayCloudy size={180} color="#000" />;
     case "02n":

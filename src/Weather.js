@@ -15,7 +15,8 @@ export default function Weather(props) {
       min: Math.round(response.data.main.temp_min),
       max: Math.round(response.data.main.temp_max),
       description: response.data.weather[0].description,
-      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
+      iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
     });
   }
 
@@ -33,6 +34,8 @@ export default function Weather(props) {
   function setCityValue(event) {
     setCity(event.target.value);
   }
+
+  /* Formu componente çevirmeye çalış */
 
   if (weather.ready) {
     return (

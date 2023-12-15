@@ -1,7 +1,9 @@
 import CurrentDate from "./CurrentDate";
+import WeatherIcon from "./WeatherIcon";
 import "./DisplayWeather.css";
 
 export default function DisplayWeather(props) {
+  /*Find cool icons*/
   return (
     <main className="DisplayWeather">
       <div>
@@ -20,7 +22,7 @@ export default function DisplayWeather(props) {
             </li>
             <li className="description">{props.info.description}</li>
           </ul>
-          <img src={props.info.icon} alt={props.info.description} />
+          <WeatherIcon code={props.info.icon} />
         </div>
       </div>
     </main>

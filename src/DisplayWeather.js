@@ -1,16 +1,15 @@
-import CurrentDate from "./CurrentDate";
+import DisplayDate from "./DisplayDate";
 import WeatherIcon from "./WeatherIcon";
 import "./DisplayWeather.css";
 
 export default function DisplayWeather(props) {
-  /*Find cool icons*/
   return (
     <main className="DisplayWeather">
       <div>
         <h2>{props.info.city}📍</h2>
       </div>
       <div>
-        <CurrentDate />
+        <DisplayDate />
         <div className="temp-container">
           <ul>
             <li className="current-temp">

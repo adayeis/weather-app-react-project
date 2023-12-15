@@ -1,4 +1,4 @@
-export default function CurrentDate() {
+export default function DisplayDate() {
   let now = new Date();
   let months = [
     "January",

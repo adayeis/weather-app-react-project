@@ -5,8 +5,12 @@ import "./DisplayWeather.css";
 export default function DisplayWeather(props) {
   return (
     <main className="DisplayWeather">
-      <div>
-        <h2>{props.info.city}📍</h2>
+      <div className="city-name">
+        <h2>{props.info.city}</h2>{" "}
+        <i
+          className="fa-solid fa-location-dot"
+          Style="color: #000000; font-size:18px"
+        ></i>
       </div>
       <div>
         <DisplayDate />

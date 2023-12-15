@@ -8,6 +8,11 @@
 
 .DisplayWeather h2 {
   text-align: center;
+  display: inline;
+}
+
+.DisplayWeather .city-name {
+  text-align: center;
 }
 
 .DisplayWeather ul {

@@ -3,6 +3,24 @@
   display: block;
   margin: 0 auto;
   max-width: 400px;
-  padding: 20px 0;
+  padding-top: 30px;
   height: 100%;
+  position: relative;
+}
+
+.App footer {
+  padding: 10px 0 8px;
+
+  text-align: center;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+.App footer a {
+  all: none;
+  text-decoration: none;
+  text-decoration-line: underline;
+  text-underline-offset: 3px;
+  color: black;
+  font-weight: 400;
 }

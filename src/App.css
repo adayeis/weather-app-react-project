@@ -1,6 +1,7 @@
 .App {
   background: none;
   display: block;
-  margin: 40px auto;
+  margin: 0 auto;
   max-width: 400px;
+  padding-top: 30px;
 }

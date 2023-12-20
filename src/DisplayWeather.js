@@ -14,7 +14,7 @@ export default function DisplayWeather(props) {
       </div>
       <div>
         <DisplayDate />
-        <div className="temp-container">
+        <main className="temp-container">
           <ul>
             <li className="current-temp">
               {props.info.temperature}
@@ -25,8 +25,10 @@ export default function DisplayWeather(props) {
             </li>
             <li className="description">{props.info.description}</li>
           </ul>
-          <WeatherIcon code={props.info.icon} size={180} />
-        </div>
+          <span className="icon">
+            <WeatherIcon code={props.info.icon} size={180} />
+          </span>
+        </main>
       </div>
     </main>
   );

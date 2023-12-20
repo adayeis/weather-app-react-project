@@ -12,3 +12,12 @@
 .DisplayForecast li span {
   align-self: center;
 }
+
+.DisplayForecast .forecast-max {
+  font-size: 18px;
+}
+
+.DisplayForecast .forecast-min {
+  font-size: 16px;
+  opacity: 0.7;
+}

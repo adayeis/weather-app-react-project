@@ -69,7 +69,7 @@ export default function Weather(props) {
             <input type="submit" value="Search" />
           </form>
         </div>
-        <div className="loader">
+        <main className="loader">
           <Hearts
             height="100%"
             width="100%"
@@ -79,7 +79,7 @@ export default function Weather(props) {
             wrapperStyle
             wrapperClass
           />
-        </div>
+        </main>
       </div>
     );
   }

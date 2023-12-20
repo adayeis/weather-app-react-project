@@ -1,9 +1,12 @@
 .Weather div {
   background-color: var(--morning-div);
-  border: 1px solid var(--morning-div-stroke);
   margin: 5px 0;
   border-radius: 8px;
   padding: 12px 20px;
+  background: rgba(199, 248, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 .Weather form {
@@ -16,12 +19,11 @@
   padding: 5px 10px;
   border: none;
   border-radius: 5px;
-  border: 1px solid var(--morning);
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 .Weather input[type="submit"] {
   background-color: var(--morning-div);
-  box-shadow: 1px 1px 2px var(--morning);
   color: black;
 }
 

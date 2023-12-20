@@ -1,7 +1,3 @@
-.Weather {
-  padding-bottom: 20px;
-}
-
 .Weather div {
   background-color: var(--morning-div);
   margin: 5px 0;

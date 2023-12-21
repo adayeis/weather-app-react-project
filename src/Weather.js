@@ -19,13 +19,15 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      lat: response.data.coord.lat,
+      lon: response.data.coord.lon,
     });
   }
 
   function callWeatherApi() {
-    const apiKey = "f3009e4852fa0a079dab291dabf020c4";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(url).then(displayTemperature);
+    const apiKey = "57b2c40fdae71a6ba41d72685e3226e2";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(displayTemperature);
   }
 
   function searchingCityWeather(event) {
@@ -52,7 +54,7 @@ export default function Weather(props) {
           </form>
         </div>
         <DisplayWeather info={weather} />
-        <DisplayForecast />
+        <DisplayForecast lat={weather.lat} lon={weather.lon} />
       </div>
     );
   } else {

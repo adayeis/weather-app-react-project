@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import DisplayForecastDay from "./DisplayForecastDay";
 import axios from "axios";
 import WeatherIcon from "./WeatherIcon";
@@ -27,6 +27,10 @@ export default function DisplayForecast(props) {
     let apiForecastUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${props.lat}&lon=${props.lon}&appid=${apiKey}&units=metric`;
     axios.get(apiForecastUrl).then(displayForecast);
   }
+
+  useEffect(() => {
+    setReady(false);
+  }, [props.lat]);
 
   if (ready) {
     return (

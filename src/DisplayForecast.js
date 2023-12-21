@@ -42,7 +42,7 @@ export default function DisplayForecast(props) {
             <span className="forecast-min">{tomorrow.min}°C</span>
           </li>
           {forecast.map(function (dailyForecast, index) {
-            if (index > 1) {
+            if (index > 1 && index < 7) {
               return (
                 <span key={index}>
                   <DisplayForecastDay info={dailyForecast} />

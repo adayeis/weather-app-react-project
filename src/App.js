@@ -18,6 +18,14 @@ function App() {
           rel="noreferrer"
         >
           Github
+        </a>{" "}
+        | hosted on{" "}
+        <a
+          href="https://waether-app-react-project-ada-yeis.netlify.apps"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Netlify
         </a>
       </footer>
     </div>
